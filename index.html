@@ -1,312 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <title></title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <div
+      style="
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 56.25%;
+        padding-bottom: 48px;
+        box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+        margin-top: 1.6em;
+        margin-bottom: 0.9em;
+        overflow: hidden;
+        border-radius: 8px;
+        will-change: transform;
+      "
+    >
+      <iframe
+        loading="lazy"
+        style="
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          border: none;
+          padding: 0;
+          margin: 0;
+        "
+        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAE1zyrcSeg&#x2F;view?embed"
+        allowfullscreen="allowfullscreen"
+        allow="fullscreen"
+      >
+      </iframe>
+    </div>
+  </head>
 
-  <title></title>
-  
-
-  
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAE1zyrcSeg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-</head>
-
-<body>
-  <div class="main">
-<h1>政府の統計総合窓口e-StatのAPI機能を利用した<br>主な地域の特性分析</h1>
-<h2>各地域同士の消費などに関する8つの項目を<br>それぞれレーダーチャートで示した。</h2>
-    <strong><span class="badge badge-primary">比較する地域１を選択してください</span></strong>
-    <form>
-      <div class="form-row align-items-center">
-        <div class="col-auto my-1">
-          <select id="select" class="custom-select mr-sm-2">            
-            <option value="a0 ">0全国 </option> 
-            <option value="a1 ">1札幌市 </option> 
-            <option value="a2 ">2青森市 </option>
-            <option value="a3 ">3盛岡市 </option>
-            <option value="a4 ">4仙台市 </option>
-            <option value="a5 ">5秋田市 </option>
-            <option value="a6 ">6山形市 </option>
-            <option value="a7 ">7福島市 </option>
-            <option value="a8 ">8水戸市 </option>
-            <option value="a9 ">9宇都宮市 </option>
-            <option value="a10 ">10前橋市 </option>
-            <option value="a11 ">11さいたま市 </option>
-            <option value="a12 ">12千葉市 </option>
-            <option value="a13 ">13東京都区部 </option>
-            <option value="a14 ">14横浜市 </option>
-            <option value="a15 ">15新潟市 </option>
-            <option value="a16 ">16富山市 </option>
-            <option value="a17 ">17金沢市 </option>
-            <option value="a18 ">18福井市 </option>
-            <option value="a19 ">19甲府市 </option>
-            <option value="a20 ">20長野市 </option>
-            <option value="a21 ">21岐阜市 </option>
-            <option value="a22 ">22静岡市 </option>
-            <option value="a23 ">23名古屋市 </option>
-            <option value="a24 ">24津市 </option>
-            <option value="a25 ">25大津市 </option>
-            <option value="a26 ">26京都市 </option>
-            <option value="a27 ">27大阪市 </option>
-            <option value="a28 ">28神戸市 </option>
-            <option value="a29 ">29奈良市 </option>
-            <option value="a30 ">30和歌山市 </option>
-            <option value="a31 ">31鳥取市 </option>
-            <option value="a32 ">32松江市 </option>
-            <option value="a33 ">33岡山市 </option>
-            <option value="a34 ">34広島市 </option>
-            <option value="a35 ">35山口市 </option>
-            <option value="a36 ">36徳島市 </option>
-            <option value="a37 ">37高松市 </option>
-            <option value="a38 ">38松山市 </option>
-            <option value="a39 ">39高知市 </option>
-            <option value="a40 ">40福岡市 </option>
-            <option value="a41 ">41佐賀市 </option>
-            <option value="a42 ">42長崎市 </option>
-            <option value="a43 ">43熊本市 </option>
-            <option value="a44 ">44大分市 </option>
-            <option value="a45 ">45宮崎市 </option>
-            <option value="a46 ">46鹿児島市 </option>
-            <option value="a47 ">47那覇市 </option>
-            <option value="a48 ">48川崎市 </option>
-            <option value="a49 ">49相模原市 </option>
-            <option value="a50 ">50浜松市 </option>
-            <option value="a51 ">51堺市 </option>
-            <option value="a52 ">52北九州市 </option>
-          </select>
+  <body>
+    <div class="main">
+      <h1>
+        政府の統計総合窓口e-StatのAPI機能を利用した<br />主な地域の特性分析
+      </h1>
+      <h2>
+        各地域同士の消費などに関する8つの項目を<br />それぞれレーダーチャートで示した。
+      </h2>
+      <strong
+        ><span class="badge badge-primary"
+          >比較する地域１を選択してください</span
+        ></strong
+      >
+      <form>
+        <div class="form-row align-items-center">
+          <div class="col-auto my-1">
+            <select id="select" class="custom-select mr-sm-2">
+              <option value="a0 ">0全国</option>
+              <option value="a1 ">1札幌市</option>
+              <option value="a2 ">2青森市</option>
+              <option value="a3 ">3盛岡市</option>
+              <option value="a4 ">4仙台市</option>
+              <option value="a5 ">5秋田市</option>
+              <option value="a6 ">6山形市</option>
+              <option value="a7 ">7福島市</option>
+              <option value="a8 ">8水戸市</option>
+              <option value="a9 ">9宇都宮市</option>
+              <option value="a10 ">10前橋市</option>
+              <option value="a11 ">11さいたま市</option>
+              <option value="a12 ">12千葉市</option>
+              <option value="a13 ">13東京都区部</option>
+              <option value="a14 ">14横浜市</option>
+              <option value="a15 ">15新潟市</option>
+              <option value="a16 ">16富山市</option>
+              <option value="a17 ">17金沢市</option>
+              <option value="a18 ">18福井市</option>
+              <option value="a19 ">19甲府市</option>
+              <option value="a20 ">20長野市</option>
+              <option value="a21 ">21岐阜市</option>
+              <option value="a22 ">22静岡市</option>
+              <option value="a23 ">23名古屋市</option>
+              <option value="a24 ">24津市</option>
+              <option value="a25 ">25大津市</option>
+              <option value="a26 ">26京都市</option>
+              <option value="a27 ">27大阪市</option>
+              <option value="a28 ">28神戸市</option>
+              <option value="a29 ">29奈良市</option>
+              <option value="a30 ">30和歌山市</option>
+              <option value="a31 ">31鳥取市</option>
+              <option value="a32 ">32松江市</option>
+              <option value="a33 ">33岡山市</option>
+              <option value="a34 ">34広島市</option>
+              <option value="a35 ">35山口市</option>
+              <option value="a36 ">36徳島市</option>
+              <option value="a37 ">37高松市</option>
+              <option value="a38 ">38松山市</option>
+              <option value="a39 ">39高知市</option>
+              <option value="a40 ">40福岡市</option>
+              <option value="a41 ">41佐賀市</option>
+              <option value="a42 ">42長崎市</option>
+              <option value="a43 ">43熊本市</option>
+              <option value="a44 ">44大分市</option>
+              <option value="a45 ">45宮崎市</option>
+              <option value="a46 ">46鹿児島市</option>
+              <option value="a47 ">47那覇市</option>
+              <option value="a48 ">48川崎市</option>
+              <option value="a49 ">49相模原市</option>
+              <option value="a50 ">50浜松市</option>
+              <option value="a51 ">51堺市</option>
+              <option value="a52 ">52北九州市</option>
+            </select>
+          </div>
         </div>
-      </div>
-    </form>
-    <strong><span class="badge badge-primary2">比較する地域2を選択してください</span></strong>
-    <form>
-      <div class="form-row align-items-center">
-        <div class="col-auto my-1">
-          <select id="select2" class="custom-select mr-sm-2">  
-          <option value="b0	">0全国	</option>     
-          <option value="b1	">1札幌市	</option>         
-          <option value="b2	">2青森市	</option>
-          <option value="b3	">3盛岡市	</option>
-          <option value="b4	">4仙台市	</option>
-          <option value="b5	">5秋田市	</option>
-          <option value="b6	">6山形市	</option>
-          <option value="b7	">7福島市	</option>
-          <option value="b8	">8水戸市	</option>
-          <option value="b9	">9宇都宮市	</option>
-          <option value="b10	">10前橋市	</option>
-          <option value="b11	">11さいたま市	</option>
-          <option value="b12	">12千葉市	</option>
-          <option value="b13	">13東京都区部	</option>
-          <option value="b14	">14横浜市	</option>
-          <option value="b15	">15新潟市	</option>
-          <option value="b16	">16富山市	</option>
-          <option value="b17	">17金沢市	</option>
-          <option value="b18	">18福井市	</option>
-          <option value="b19	">19甲府市	</option>
-          <option value="b20	">20長野市	</option>
-          <option value="b21	">21岐阜市	</option>
-          <option value="b22	">22静岡市	</option>
-          <option value="b23	">23名古屋市	</option>
-          <option value="b24	">24津市	</option>
-          <option value="b25	">25大津市	</option>
-          <option value="b26	">26京都市	</option>
-          <option value="b27	">27大阪市	</option>
-          <option value="b28	">28神戸市	</option>
-          <option value="b29	">29奈良市	</option>
-          <option value="b30	">30和歌山市	</option>
-          <option value="b31	">31鳥取市	</option>
-          <option value="b32	">32松江市	</option>
-          <option value="b33	">33岡山市	</option>
-          <option value="b34	">34広島市	</option>
-          <option value="b35	">35山口市	</option>
-          <option value="b36	">36徳島市	</option>
-          <option value="b37	">37高松市	</option>
-          <option value="b38	">38松山市	</option>
-          <option value="b39	">39高知市	</option>
-          <option value="b40	">40福岡市	</option>
-          <option value="b41	">41佐賀市	</option>
-          <option value="b42	">42長崎市	</option>
-          <option value="b43	">43熊本市	</option>
-          <option value="b44	">44大分市	</option>
-          <option value="b45	">45宮崎市	</option>
-          <option value="b46	">46鹿児島市	</option>
-          <option value="b47	">47那覇市	</option>
-          <option value="b48	">48川崎市	</option>
-          <option value="b49	">49相模原市	</option>
-          <option value="b50	">50浜松市	</option>
-          <option value="b51	">51堺市	</option>
-          <option value="b52	">52北九州市	</option>
-
-          </select>
+      </form>
+      <strong
+        ><span class="badge badge-primary2"
+          >比較する地域2を選択してください</span
+        ></strong
+      >
+      <form>
+        <div class="form-row align-items-center">
+          <div class="col-auto my-1">
+            <select id="select2" class="custom-select mr-sm-2">
+              <option value="b0	">0全国</option>
+              <option value="b1	">1札幌市</option>
+              <option value="b2	">2青森市</option>
+              <option value="b3	">3盛岡市</option>
+              <option value="b4	">4仙台市</option>
+              <option value="b5	">5秋田市</option>
+              <option value="b6	">6山形市</option>
+              <option value="b7	">7福島市</option>
+              <option value="b8	">8水戸市</option>
+              <option value="b9	">9宇都宮市</option>
+              <option value="b10	">10前橋市</option>
+              <option value="b11	">11さいたま市</option>
+              <option value="b12	">12千葉市</option>
+              <option value="b13	">13東京都区部</option>
+              <option value="b14	">14横浜市</option>
+              <option value="b15	">15新潟市</option>
+              <option value="b16	">16富山市</option>
+              <option value="b17	">17金沢市</option>
+              <option value="b18	">18福井市</option>
+              <option value="b19	">19甲府市</option>
+              <option value="b20	">20長野市</option>
+              <option value="b21	">21岐阜市</option>
+              <option value="b22	">22静岡市</option>
+              <option value="b23	">23名古屋市</option>
+              <option value="b24	">24津市</option>
+              <option value="b25	">25大津市</option>
+              <option value="b26	">26京都市</option>
+              <option value="b27	">27大阪市</option>
+              <option value="b28	">28神戸市</option>
+              <option value="b29	">29奈良市</option>
+              <option value="b30	">30和歌山市</option>
+              <option value="b31	">31鳥取市</option>
+              <option value="b32	">32松江市</option>
+              <option value="b33	">33岡山市</option>
+              <option value="b34	">34広島市</option>
+              <option value="b35	">35山口市</option>
+              <option value="b36	">36徳島市</option>
+              <option value="b37	">37高松市</option>
+              <option value="b38	">38松山市</option>
+              <option value="b39	">39高知市</option>
+              <option value="b40	">40福岡市</option>
+              <option value="b41	">41佐賀市</option>
+              <option value="b42	">42長崎市</option>
+              <option value="b43	">43熊本市</option>
+              <option value="b44	">44大分市</option>
+              <option value="b45	">45宮崎市</option>
+              <option value="b46	">46鹿児島市</option>
+              <option value="b47	">47那覇市</option>
+              <option value="b48	">48川崎市</option>
+              <option value="b49	">49相模原市</option>
+              <option value="b50	">50浜松市</option>
+              <option value="b51	">51堺市</option>
+              <option value="b52	">52北九州市</option>
+            </select>
+          </div>
         </div>
-      </div>
-    </form>
-<br>
-    <button onclick="hoge();" type="button" class="btn btn-outline-warning">取得</button>※比較地域を変更する場合は、リロードが必要
-    <h2>項目について</h2>
-    <ul>   
-       <li><strong>「エンゲル係数」</strong>は、家計の消費支出（世帯を維持していくために必要な支出）のうち、飲食費に使う割合を表す数値のことです。生活水準が低いとエンゲル係数は高くなる</li>
-      <li><strong>1家族あたりの18歳未満人員【％】"は2人以上の１世帯に1家族あたりの18歳未満人員が所属している割合</strong>"を示している</li>
-      <li><strong>"持家率【％】", "住居費【％】","光熱費、水道費の割合【％】","冷房用器具の購入料の割合【％】","交際費の割合【％】"</strong>は、2人以上の世帯あたりの消費支出に対する割合を示している</li>
-      <li>※なお、冷房用器具の購入料の割合は、チャート上で見やすくするために本来の数字の10倍の数値に加工している</li>
-  
-   </ul>
-
- 
-  </div>
-  <section>
-    <div class="container mt-5">
+      </form>
+      <br />
+      <button onclick="hoge();" type="button" class="btn btn-outline-warning">
+        取得</button
+      >※比較地域を変更する場合は、リロードが必要
+      <h2>項目について</h2>
+      <ul>
+        <li>
+          <strong>「エンゲル係数」</strong
+          >は、家計の消費支出（世帯を維持していくために必要な支出）のうち、飲食費に使う割合を表す数値のことです。生活水準が低いとエンゲル係数は高くなる
+        </li>
+        <li>
+          <strong
+            >1家族あたりの18歳未満人員【％】"は2人以上の１世帯に1家族あたりの18歳未満人員が所属している割合</strong
+          >"を示している
+        </li>
+        <li>
+          <strong
+            >"持家率【％】",
+            "住居費【％】","光熱費、水道費の割合【％】","冷房用器具の購入料の割合【％】","交際費の割合【％】"</strong
+          >は、2人以上の世帯あたりの消費支出に対する割合を示している
+        </li>
+        <li>
+          ※なお、冷房用器具の購入料の割合は、チャート上で見やすくするために本来の数字の10倍の数値に加工している
+        </li>
+      </ul>
+    </div>
+    <section>
+      <div class="container mt-5">
         <div class="col-md-12 col-xl-12">
-            <div class="card-block">
-              <div class="chart-area">
-                <canvas id="chart1"></canvas>
-              
-              </div>
+          <div class="card-block">
+            <div class="chart-area">
+              <canvas id="chart1"></canvas>
             </div>
           </div>
         </div>
-        
-  </section>
-<h2>使用データ</h2>
-<p>政府統計総合窓口e-Stat　家計調査 2人以上の世帯　2019年1月<a href="http://api.e-stat.go.jp/rest/3.0/app/json/getStatsData?cdTime=2019000101&cdCat01=004%2C011%2C059%2C102%2C107%2C115%2C173%2C263&cdCat02=03&cdArea=00000%2C01003%2C02003%2C03003%2C04003%2C05003%2C06003%2C07003%2C08003%2C09003%2C10003%2C11003%2C12003%2C13003%2C14003%2C15003%2C16003%2C17003%2C18003%2C19003%2C20003%2C21003%2C22003%2C23003%2C24003%2C25003%2C26003%2C27003%2C28003%2C29003%2C30003%2C31003%2C32003%2C33003%2C34003%2C35003%2C36003%2C37003%2C38003%2C39003%2C40004%2C41003%2C42003%2C43003%2C44003%2C45003%2C46003%2C47003%2C14004%2C14150%2C22004%2C27004%2C40003&appId=f8549b54493b82702caa36a28685544e67c48b91&lang=J&statsDataId=0002070001&metaGetFlg=Y&cntGetFlg=N&explanationGetFlg=Y&annotationGetFlg=Y&sectionHeaderFlg=1&replaceSpChars=0">http://api.e-stat.go.jp/rest/3.0/app/json/getStatsData?cdTime=2019000101&cdCat01=004%2C011%2C059%2C102%2C107%2C115%2C173%2C263&cdCat02=03&cdArea=00000%2C01003%2C02003%2C03003%2C04003%2C05003%2C06003%2C07003%2C08003%2C09003%2C10003%2C11003%2C12003%2C13003%2C14003%2C15003%2C16003%2C17003%2C18003%2C19003%2C20003%2C21003%2C22003%2C23003%2C24003%2C25003%2C26003%2C27003%2C28003%2C29003%2C30003%2C31003%2C32003%2C33003%2C34003%2C35003%2C36003%2C37003%2C38003%2C39003%2C40004%2C41003%2C42003%2C43003%2C44003%2C45003%2C46003%2C47003%2C14004%2C14150%2C22004%2C27004%2C40003&appId=f8549b54493b82702caa36a28685544e67c48b91&lang=J&statsDataId=0002070001&metaGetFlg=Y&cntGetFlg=N&explanationGetFlg=Y&annotationGetFlg=Y&sectionHeaderFlg=1&replaceSpChars=0</a>(参照日2022/1/16)</p>
-<h2>参考文献</h2>
-<p>政府統計窓口　e-StatのAPIの使い方　<a href="https://www.e-stat.go.jp/api/api-dev/how_to_use">https://www.e-stat.go.jp/api/api-dev/how_to_use</a>(参照日2022/1/16)</p>
-<p>WebAPIの取得について　<a href="https://anko.education/joho/network/webapi">https://anko.education/joho/network/webapi</a>(参照日2022/1/16)</p>
-<p>chart.js 日本語　エリアチャート(Area chart)　<a href="https://tr.you84815.space/chartjs/charts/area.html">https://tr.you84815.space/chartjs/charts/area.html</a>(参照日2022/1/16)</p>
-<p>teratail APIで取得したデータをchart.jsで複数のチャートに表示したい<a href="https://teratail.com/questions/316880">https://teratail.com/questions/316880</a>(参照日2022/1/16)</p>
+      </div>
+    </section>
+    <h2>使用データ</h2>
+    <p>
+      政府統計総合窓口e-Stat　家計調査 2人以上の世帯　2019年1月<a
+        href="http://api.e-stat.go.jp/rest/3.0/app/json/getStatsData?cdTime=2019000101&cdCat01=004%2C011%2C059%2C102%2C107%2C115%2C173%2C263&cdCat02=03&cdArea=00000%2C01003%2C02003%2C03003%2C04003%2C05003%2C06003%2C07003%2C08003%2C09003%2C10003%2C11003%2C12003%2C13003%2C14003%2C15003%2C16003%2C17003%2C18003%2C19003%2C20003%2C21003%2C22003%2C23003%2C24003%2C25003%2C26003%2C27003%2C28003%2C29003%2C30003%2C31003%2C32003%2C33003%2C34003%2C35003%2C36003%2C37003%2C38003%2C39003%2C40004%2C41003%2C42003%2C43003%2C44003%2C45003%2C46003%2C47003%2C14004%2C14150%2C22004%2C27004%2C40003&appId=f8549b54493b82702caa36a28685544e67c48b91&lang=J&statsDataId=0002070001&metaGetFlg=Y&cntGetFlg=N&explanationGetFlg=Y&annotationGetFlg=Y&sectionHeaderFlg=1&replaceSpChars=0"
+        >http://api.e-stat.go.jp/rest/3.0/app/json/getStatsData?cdTime=2019000101&cdCat01=004%2C011%2C059%2C102%2C107%2C115%2C173%2C263&cdCat02=03&cdArea=00000%2C01003%2C02003%2C03003%2C04003%2C05003%2C06003%2C07003%2C08003%2C09003%2C10003%2C11003%2C12003%2C13003%2C14003%2C15003%2C16003%2C17003%2C18003%2C19003%2C20003%2C21003%2C22003%2C23003%2C24003%2C25003%2C26003%2C27003%2C28003%2C29003%2C30003%2C31003%2C32003%2C33003%2C34003%2C35003%2C36003%2C37003%2C38003%2C39003%2C40004%2C41003%2C42003%2C43003%2C44003%2C45003%2C46003%2C47003%2C14004%2C14150%2C22004%2C27004%2C40003&appId=f8549b54493b82702caa36a28685544e67c48b91&lang=J&statsDataId=0002070001&metaGetFlg=Y&cntGetFlg=N&explanationGetFlg=Y&annotationGetFlg=Y&sectionHeaderFlg=1&replaceSpChars=0</a
+      >(参照日2022/1/16)
+    </p>
+    <h2>参考文献</h2>
+    <p>
+      政府統計窓口　e-StatのAPIの使い方　<a
+        href="https://www.e-stat.go.jp/api/api-dev/how_to_use"
+        >https://www.e-stat.go.jp/api/api-dev/how_to_use</a
+      >(参照日2022/1/16)
+    </p>
+    <p>
+      WebAPIの取得について　<a href="https://anko.education/joho/network/webapi"
+        >https://anko.education/joho/network/webapi</a
+      >(参照日2022/1/16)
+    </p>
+    <p>
+      chart.js 日本語　エリアチャート(Area chart)　<a
+        href="https://tr.you84815.space/chartjs/charts/area.html"
+        >https://tr.you84815.space/chartjs/charts/area.html</a
+      >(参照日2022/1/16)
+    </p>
+    <p>
+      teratail APIで取得したデータをchart.jsで複数のチャートに表示したい<a
+        href="https://teratail.com/questions/316880"
+        >https://teratail.com/questions/316880</a
+      >(参照日2022/1/16)
+    </p>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>　<!-- Chart.js の読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    　<!-- Chart.js の読み込み -->
 
-  <script>
-let appId = "f8549b54493b82702caa36a28685544e67c48b91"; //ここにappIDを入力して下さい
-let url = "http://api.e-stat.go.jp/rest/3.0/app/json/getStatsData?cdTime=2019000101&cdCat01=004%2C011%2C059%2C102%2C107%2C115%2C173%2C263&cdCat02=03&cdArea=00000%2C01003%2C02003%2C03003%2C04003%2C05003%2C06003%2C07003%2C08003%2C09003%2C10003%2C11003%2C12003%2C13003%2C14003%2C15003%2C16003%2C17003%2C18003%2C19003%2C20003%2C21003%2C22003%2C23003%2C24003%2C25003%2C26003%2C27003%2C28003%2C29003%2C30003%2C31003%2C32003%2C33003%2C34003%2C35003%2C36003%2C37003%2C38003%2C39003%2C40004%2C41003%2C42003%2C43003%2C44003%2C45003%2C46003%2C47003%2C14004%2C14150%2C22004%2C27004%2C40003&appId=" + appId + "&lang=J&statsDataId=0002070001&metaGetFlg=Y&cntGetFlg=N&explanationGetFlg=Y&annotationGetFlg=Y&sectionHeaderFlg=1&replaceSpChars=0";
-//政府統計総合窓口e-StaからAPI取得
+    <script>
+      let appId = "f8549b54493b82702caa36a28685544e67c48b91"; //ここにappIDを入力して下さい
+      let url =
+        "http://api.e-stat.go.jp/rest/3.0/app/json/getStatsData?cdTime=2019000101&cdCat01=004%2C011%2C059%2C102%2C107%2C115%2C173%2C263&cdCat02=03&cdArea=00000%2C01003%2C02003%2C03003%2C04003%2C05003%2C06003%2C07003%2C08003%2C09003%2C10003%2C11003%2C12003%2C13003%2C14003%2C15003%2C16003%2C17003%2C18003%2C19003%2C20003%2C21003%2C22003%2C23003%2C24003%2C25003%2C26003%2C27003%2C28003%2C29003%2C30003%2C31003%2C32003%2C33003%2C34003%2C35003%2C36003%2C37003%2C38003%2C39003%2C40004%2C41003%2C42003%2C43003%2C44003%2C45003%2C46003%2C47003%2C14004%2C14150%2C22004%2C27004%2C40003&appId=" +
+        appId +
+        "&lang=J&statsDataId=0002070001&metaGetFlg=Y&cntGetFlg=N&explanationGetFlg=Y&annotationGetFlg=Y&sectionHeaderFlg=1&replaceSpChars=0";
+      //政府統計総合窓口e-StaからAPI取得
 
+      let dataArray = [];
+      let dataArray2 = [];
+      let parcent1 = [];
+      let parcent2 = [];
 
-let dataArray = [];
-let dataArray2 = [];
-let parcent1= [];
-let parcent2= [];
+      //⇩取得から、表示までまでこの関数で行う
+      function hoge() {
+        var cc2;
+        var cc1;
+        var obj = document.getElementById("select");
+        // 選択されている値の番号を取得
+        var idx = obj.selectedIndex;
+        // 値を取得
+        var txt = obj.options[idx].text;
+        if (txt.length == "51堺市" || txt.length == "24津市") {
+          var cc1 = Number(txt.slice(0, 2));
+        }
+        if (txt.length == 4 || txt == "9宇都宮市" || txt == "0全国") {
+          var cc1 = Number(txt.slice(0, 1));
+        } else {
+          var cc1 = Number(txt.slice(0, 2));
+        } // 表示
+        document.getElementsByClassName("badge-primary")[0].textContent = cc1;
 
-//⇩取得から、表示までまでこの関数で行う
-function hoge() { 
-  var cc2;  
-  var cc1;
-    var obj = document.getElementById('select');
-    // 選択されている値の番号を取得
-    var idx = obj.selectedIndex;
-    // 値を取得
-    var txt  = obj.options[idx].text;
-    if (txt.length=="51堺市" ||txt.length=="24津市"){
-      var cc1 = Number(txt.slice( 0, 2) );
-    }if (txt.length  == 4 ||txt == "9宇都宮市"||txt  == "0全国") {
-      var cc1 =Number(txt.slice( 0, 1) )
-　　}else {
-      var cc1 = Number(txt.slice( 0, 2) );
-}// 表示
-    document.getElementsByClassName('badge-primary')[0].textContent = cc1;
+        var obj2 = document.getElementById("select2");
+        // 選択されている値の番号を取得
+        var idx2 = obj2.selectedIndex;
+        // 値を取得
+        var txt2 = obj2.options[idx2].text;
+        if (txt2.length == "51堺市" || txt2.length == "24津市") {
+          var cc2 = Number(txt2.slice(0, 2));
+        }
+        if (txt2.length == 4 || txt2 == "9宇都宮市" || txt2 == "0全国") {
+          var cc2 = Number(txt2.slice(0, 1));
+        } else {
+          var cc2 = Number(txt2.slice(0, 2));
+        }
+        // 表示
+        document.getElementsByClassName("badge-primary2")[0].textContent = cc2;
 
+        fetch(url)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            for (let i = 0; i < 8; i++) {
+              dataArray.push(
+                Number(
+                  data.GET_STATS_DATA.STATISTICAL_DATA.DATA_INF.VALUE[
+                    i * 53 + Number(cc1)
+                  ].$
+                )
+              );
+              dataArray2.push(
+                Number(
+                  data.GET_STATS_DATA.STATISTICAL_DATA.DATA_INF.VALUE[
+                    i * 53 + Number(cc2)
+                  ].$
+                )
+              );
+            }
 
-    var obj2 = document.getElementById('select2');
-    // 選択されている値の番号を取得
-    var idx2 = obj2.selectedIndex;
-    // 値を取得
-    var txt2  =obj2.options[idx2].text;
-    if (txt2.length=="51堺市" ||txt2.length=="24津市"){
-      var cc2 = Number(txt2.slice( 0, 2) );
-    }if (txt2.length  == 4 ||txt2  == "9宇都宮市"||txt2  == "0全国") {
-      var cc2 =Number(txt2.slice( 0, 1) )
-} else {
-      var cc2 = Number(txt2.slice( 0, 2) );
-}
-    // 表示
-    document.getElementsByClassName('badge-primary2')[0].textContent = cc2;
-    
-    
-    fetch(url)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
+            //地域１の消費支出に対するそれぞれの割合の計算をして格納
+            parcent1.push(Number(dataArray[0] * 100));
+            parcent1.push(Number(dataArray[1]));
+            parcent1.push(Number((dataArray[3] / dataArray[2]) * 100));
+            parcent1.push(Number((dataArray[4] / dataArray[2]) * 100));
+            parcent1.push(Number((dataArray[5] / dataArray[2]) * 1000));
+            parcent1.push(Number((dataArray[6] / dataArray[2]) * 100));
+            parcent1.push(Number(dataArray[7]));
 
-        
-        for (let i = 0; i < 8; i++) {
-       
-    dataArray.push(Number(data.GET_STATS_DATA.STATISTICAL_DATA.DATA_INF.VALUE[(i*53)+Number(cc1)].$))
-    dataArray2.push(Number(data.GET_STATS_DATA.STATISTICAL_DATA.DATA_INF.VALUE[(i*53)+Number(cc2)].$))
-}
-        
- 
+            //地域2の消費支出に対するそれぞれの割合の計算をして格納
+            parcent2.push(Number(dataArray2[0] * 100));
+            parcent2.push(Number(dataArray2[1]));
+            parcent2.push(Number((dataArray2[3] / dataArray[2]) * 100));
+            parcent2.push(Number((dataArray2[4] / dataArray[2]) * 100));
+            parcent2.push(Number((dataArray2[5] / dataArray[2]) * 1000));
+            parcent2.push(Number((dataArray2[6] / dataArray[2]) * 100));
+            parcent2.push(Number(dataArray2[7]));
 
-//地域１の消費支出に対するそれぞれの割合の計算をして格納
- parcent1.push(Number(dataArray[0]*100))
- parcent1.push(Number(dataArray[1])) 
- parcent1.push(Number(dataArray[3]/dataArray[2]*100))
- parcent1.push(Number(dataArray[4]/dataArray[2]*100))
- parcent1.push(Number(dataArray[5]/dataArray[2]*1000))
- parcent1.push(Number(dataArray[6]/dataArray[2]*100) )                 
- parcent1.push(Number(dataArray[7])) 
+            let date = Object.values(parcent1);
+            let total = Object.values(parcent2);
 
-//地域2の消費支出に対するそれぞれの割合の計算をして格納
- parcent2.push(Number(dataArray2[0]*100))
- parcent2.push(Number(dataArray2[1])) 
- parcent2.push(Number(dataArray2[3]/dataArray[2]*100))
- parcent2.push(Number(dataArray2[4]/dataArray[2]*100))
- parcent2.push(Number(dataArray2[5]/dataArray[2]*1000))
- parcent2.push(Number(dataArray2[6]/dataArray[2]*100) )                 
- parcent2.push(Number(dataArray2[7])) 
+            var ctx1 = document.getElementById("chart1").getContext("2d");
 
-
-let date = Object.values(parcent1);
-let total = Object.values(parcent2);
-var ctx1 = document.getElementById('chart1').getContext('2d');
-        
-//レーダーチャートを表示させる
+            //レーダーチャートを表示させる
             let myChart1 = new Chart(ctx1, {
-                type: 'radar',
-                data: {
-                  labels: ["1家族あたりの18歳未満人員【％】", "持家率【％】", "住居費【％】","光熱費、水道費の割合【％】","冷房用器具を購入料の割合【％】","交際費の割合【％】","エンゲル係数"],
-                    datasets: [
-                        {
-                            label: txt,
-                            data: date,
-                            borderColor: 'rgba(255, 99, 132)',
-                            backgroundColor: "rgba(255, 99, 132, 0.2)",
-                            fill: true,
-                        },
-                        {
-                            label: txt2,
-                            data: total,
-                            
-                            borderColor: 'rgba(54,164,235)',
-                            backgroundColor: "rgba(54, 162, 235, 0.2)",
-                            
-                            fill: true,
-                        },
+              type: "radar",
+              data: {
+                labels: [
+                  "1家族あたりの18歳未満人員【％】",
+                  "持家率【％】",
+                  "住居費【％】",
+                  "光熱費、水道費の割合【％】",
+                  "冷房用器具を購入料の割合【％】",
+                  "交際費の割合【％】",
+                  "エンゲル係数",
+                ],
+                datasets: [
+                  {
+                    label: txt,
+                    data: date,
+                    borderColor: "rgba(255, 99, 132)",
+                    backgroundColor: "rgba(255, 99, 132, 0.2)",
+                    fill: true,
+                  },
+                  {
+                    label: txt2,
+                    data: total,
 
-                    ],
-                },
+                    borderColor: "rgba(54,164,235)",
+                    backgroundColor: "rgba(54, 162, 235, 0.2)",
 
-            });    
+                    fill: true,
+                  },
+                ],
+              },
+            });
+          })
 
-        })
-
-        .catch((error) => {
-            console.log('Error: ', error);
-        });        
-
-  }
-    
+          .catch((error) => {
+            console.log("Error: ", error);
+          });
+      }
     </script>
-</body>
+  </body>
 </html>
