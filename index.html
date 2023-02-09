@@ -267,12 +267,9 @@ function hoge() {
  parcent2.push(Number(dataArray2[7])) 
 
 
-
-            let date = Object.values(parcent1);
-            let total = Object.values(parcent2);
-            
-          
-            var ctx1 = document.getElementById('chart1').getContext('2d');
+let date = Object.values(parcent1);
+let total = Object.values(parcent2);
+var ctx1 = document.getElementById('chart1').getContext('2d');
         
 //レーダーチャートを表示させる
             let myChart1 = new Chart(ctx1, {
