@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content="" />
     <meta name="author" content="" />
 
@@ -49,12 +48,6 @@
 
   <body>
     <div class="main">
-      <h1>
-        政府の統計総合窓口e-StatのAPI機能を利用した<br />主な地域の特性分析
-      </h1>
-      <h2>
-        各地域同士の消費などに関する8つの項目を<br />それぞれレーダーチャートで示した。
-      </h2>
       <strong
         ><span class="badge badge-primary"
           >比較する地域１を選択してください</span
@@ -191,27 +184,6 @@
       <button onclick="hoge();" type="button" class="btn btn-outline-warning">
         取得</button
       >※比較地域を変更する場合は、リロードが必要
-      <h2>項目について</h2>
-      <ul>
-        <li>
-          <strong>「エンゲル係数」</strong
-          >は、家計の消費支出（世帯を維持していくために必要な支出）のうち、飲食費に使う割合を表す数値のことです。生活水準が低いとエンゲル係数は高くなる
-        </li>
-        <li>
-          <strong
-            >1家族あたりの18歳未満人員【％】"は2人以上の１世帯に1家族あたりの18歳未満人員が所属している割合</strong
-          >"を示している
-        </li>
-        <li>
-          <strong
-            >"持家率【％】",
-            "住居費【％】","光熱費、水道費の割合【％】","冷房用器具の購入料の割合【％】","交際費の割合【％】"</strong
-          >は、2人以上の世帯あたりの消費支出に対する割合を示している
-        </li>
-        <li>
-          ※なお、冷房用器具の購入料の割合は、チャート上で見やすくするために本来の数字の10倍の数値に加工している
-        </li>
-      </ul>
     </div>
     <section>
       <div class="container mt-5">
@@ -224,37 +196,7 @@
         </div>
       </div>
     </section>
-    <h2>使用データ</h2>
-    <p>
-      政府統計総合窓口e-Stat　家計調査 2人以上の世帯　2019年1月<a
-        href="http://api.e-stat.go.jp/rest/3.0/app/json/getStatsData?cdTime=2019000101&cdCat01=004%2C011%2C059%2C102%2C107%2C115%2C173%2C263&cdCat02=03&cdArea=00000%2C01003%2C02003%2C03003%2C04003%2C05003%2C06003%2C07003%2C08003%2C09003%2C10003%2C11003%2C12003%2C13003%2C14003%2C15003%2C16003%2C17003%2C18003%2C19003%2C20003%2C21003%2C22003%2C23003%2C24003%2C25003%2C26003%2C27003%2C28003%2C29003%2C30003%2C31003%2C32003%2C33003%2C34003%2C35003%2C36003%2C37003%2C38003%2C39003%2C40004%2C41003%2C42003%2C43003%2C44003%2C45003%2C46003%2C47003%2C14004%2C14150%2C22004%2C27004%2C40003&appId=f8549b54493b82702caa36a28685544e67c48b91&lang=J&statsDataId=0002070001&metaGetFlg=Y&cntGetFlg=N&explanationGetFlg=Y&annotationGetFlg=Y&sectionHeaderFlg=1&replaceSpChars=0"
-        >http://api.e-stat.go.jp/rest/3.0/app/json/getStatsData?cdTime=2019000101&cdCat01=004%2C011%2C059%2C102%2C107%2C115%2C173%2C263&cdCat02=03&cdArea=00000%2C01003%2C02003%2C03003%2C04003%2C05003%2C06003%2C07003%2C08003%2C09003%2C10003%2C11003%2C12003%2C13003%2C14003%2C15003%2C16003%2C17003%2C18003%2C19003%2C20003%2C21003%2C22003%2C23003%2C24003%2C25003%2C26003%2C27003%2C28003%2C29003%2C30003%2C31003%2C32003%2C33003%2C34003%2C35003%2C36003%2C37003%2C38003%2C39003%2C40004%2C41003%2C42003%2C43003%2C44003%2C45003%2C46003%2C47003%2C14004%2C14150%2C22004%2C27004%2C40003&appId=f8549b54493b82702caa36a28685544e67c48b91&lang=J&statsDataId=0002070001&metaGetFlg=Y&cntGetFlg=N&explanationGetFlg=Y&annotationGetFlg=Y&sectionHeaderFlg=1&replaceSpChars=0</a
-      >(参照日2022/1/16)
-    </p>
-    <h2>参考文献</h2>
-    <p>
-      政府統計窓口　e-StatのAPIの使い方　<a
-        href="https://www.e-stat.go.jp/api/api-dev/how_to_use"
-        >https://www.e-stat.go.jp/api/api-dev/how_to_use</a
-      >(参照日2022/1/16)
-    </p>
-    <p>
-      WebAPIの取得について　<a href="https://anko.education/joho/network/webapi"
-        >https://anko.education/joho/network/webapi</a
-      >(参照日2022/1/16)
-    </p>
-    <p>
-      chart.js 日本語　エリアチャート(Area chart)　<a
-        href="https://tr.you84815.space/chartjs/charts/area.html"
-        >https://tr.you84815.space/chartjs/charts/area.html</a
-      >(参照日2022/1/16)
-    </p>
-    <p>
-      teratail APIで取得したデータをchart.jsで複数のチャートに表示したい<a
-        href="https://teratail.com/questions/316880"
-        >https://teratail.com/questions/316880</a
-      >(参照日2022/1/16)
-    </p>
+
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     　<!-- Chart.js の読み込み -->
